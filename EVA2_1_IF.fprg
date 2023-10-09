@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="t3sts"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-09 05:29:34 p. m."/>
+        <attribute name="created" value="dDNzdHM7RE9PTTsyMDIzLTEwLTA5OzA1OjE0OjE0IHAuIG0uOzIyODA="/>
+        <attribute name="edited" value="dDNzdHM7RE9PTTsyMDIzLTEwLTA5OzA1OjI5OjM0IHAuIG0uOzE7MjM5Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="CALIF" type="Integer" array="False" size=""/>
+            <output expression="&quot;CALIFICACI&#211;N=&quot;" newline="True"/>
+            <input variable="CALIF"/>
+            <if expression="CALIF &gt;=70">
+                <then>
+                    <output expression="&quot;APRUEBA&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;REPRUEBA&quot;" newline="True"/>
+                </else>
+            </if>
+            <output expression="&quot;FIN&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
