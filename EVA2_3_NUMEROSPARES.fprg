@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="t3sts"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-10 05:49:31 p. m."/>
+        <attribute name="created" value="dDNzdHM7RE9PTTsyMDIzLTEwLTEwOzA1OjM5OjU2IHAuIG0uOzIyODU="/>
+        <attribute name="edited" value="dDNzdHM7RE9PTTsyMDIzLTEwLTEwOzA1OjQ5OjMxIHAuIG0uOzE7MjM4Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;DEFINIR SI UN VALOR ES PAR O IMPAR&quot;" newline="True"/>
+            <declare name="VALOR" type="Integer" array="False" size=""/>
+            <declare name="RESIDUO" type="Integer" array="False" size=""/>
+            <output expression="&quot;INTRODUCE EL VALOR:&quot;" newline="True"/>
+            <input variable="VALOR"/>
+            <assign variable="RESIDUO" expression="VALOR % 2"/>
+            <if expression="RESIDUO == 0">
+                <then>
+                    <output expression="&quot;N&#218;MERO PAR&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;N&#218;MERO IMPAR&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
