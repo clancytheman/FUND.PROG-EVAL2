@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="t3sts"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-11 05:35:43 p. m."/>
+        <attribute name="created" value="dDNzdHM7RE9PTTsyMDIzLTEwLTExOzA1OjE2OjQ4IHAuIG0uOzIyODI="/>
+        <attribute name="edited" value="dDNzdHM7RE9PTTsyMDIzLTEwLTExOzA1OjM1OjQzIHAuIG0uOzE7MjM4Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="YEAR" type="Integer" array="False" size=""/>
+            <declare name="LEAPYEAR" type="Integer" array="False" size=""/>
+            <output expression="&quot;WHAT YEAR IS IT?&quot;" newline="True"/>
+            <input variable="YEAR"/>
+            <assign variable="LEAPYEAR" expression="YEAR % 4"/>
+            <if expression="LEAPYEAR == 0">
+                <then>
+                    <assign variable="LEAPYEAR" expression="YEAR % 100"/>
+                    <if expression="LEAPYEAR == 0">
+                        <then>
+                            <assign variable="LEAPYEAR" expression="YEAR % 400"/>
+                            <if expression="LEAPYEAR == 0">
+                                <then>
+                                    <output expression="&quot;IT'S LEAP YEAR&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;NOT LEAP YEAR&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;IT'S LEAP YEAR&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;NOT LEAP YEAR&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
