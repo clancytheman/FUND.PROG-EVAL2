@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author t3sts
+ * @author DIEGO ESCARCEGA
  */
 public class EVA2_10_CARRERAS {
 
